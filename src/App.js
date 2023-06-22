@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import { Display } from "./Components/Display"
+import { InputPerson } from "./Components/InputPerson"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div className="background">
+        <div className="App">
+          <Display />
+          <InputPerson />
+        </div>
+        <span>The background is provided by loading.io </span>
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
