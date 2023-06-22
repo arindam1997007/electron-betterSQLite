@@ -18,6 +18,7 @@
     "start": "react-scripts start",
     "dev": "concurrently -k \"cross-env BROWSER=none npm start\" \"npm:electron\"",
     "electron": "wait-on tcp:3000 && electron .",
+    "rebuild-app": "electron-builder install-app-deps",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
