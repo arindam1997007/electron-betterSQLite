@@ -15,7 +15,7 @@ Clone the repository and navigate to the project directory:
 
 ```bash
 git clone https://github.com/your-username/electron-betterSQLite.git
-cd your-electron-sqlite-project
+cd electron-betterSQLite
 ```
 
 Install the dependencies:
