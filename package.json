@@ -1,14 +1,16 @@
 {
 	"name": "electron-sqlite",
+	"description": "SQLite Integration with Electron App",
 	"version": "0.1.0",
 	"main": "public/electron.js",
 	"private": true,
+	"author": "Arindam Chowdhury",
+	"homepage": "./",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^13.5.0",
 		"better-sqlite3": "^8.4.0",
-		"electron-builder": "^23.6.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-scripts": "5.0.1",
@@ -16,13 +18,13 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"dev": "concurrently -k \"cross-env BROWSER=none npm start\" \"npm:electron\"",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"rebuild-app": "electron-builder install-app-deps",
 		"electron": "wait-on tcp:3000 && electron .",
-		"start-electron-app": "concurrently -k \"cross-env BROWSER=none npm run start\" \"npm run electron\""
+		"start-electron-app": "concurrently -k \"cross-env BROWSER=none npm run start\" \"cross-env NODE_ENV=development  npm run electron\"",
+		"package-windows": "rm -rf build && rm -rf dist && npm run build && electron-builder -w -c.extraMetadata.main=build/electron.js"
 	},
 	"eslintConfig": {
 		"extends": [
@@ -47,6 +49,22 @@
 		"concurrently": "^8.1.0",
 		"cross-env": "^7.0.3",
 		"electron": "^25.0.1",
+		"electron-builder": "^24.4.0",
 		"wait-on": "^7.0.1"
+	},
+	"build": {
+		"appId": "sqlite.electron-test.app",
+		"productName": "SQLite Electron",
+		"files": [
+			"build/**/*",
+			"node_modules/**/*",
+			"public/**/*"
+		],
+		"directories": {
+			"buildResources": "public"
+		},
+		"extraResources": [
+			"./demo_table.db"
+		]
 	}
 }

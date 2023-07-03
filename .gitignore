@@ -25,3 +25,7 @@ yarn-error.log*
 # DB - temp files
 *.db-shm
 *.db-wal
+
+
+# Packaged files
+/dist
