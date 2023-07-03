@@ -1,0 +1,23 @@
+.tableContainer {
+	color: #ffd78d;
+	background: rgba(255, 255, 255, 0.16);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3.1px);
+	-webkit-backdrop-filter: blur(3.1px);
+	border: 1px solid rgba(255, 255, 255, 0.52);
+	width: 40vw;
+	padding: 16px;
+	z-index: 1;
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table th,
+.table td {
+	padding: 16px 8px;
+	/* border: 1px solid rgba(0, 0, 0, 0.2); */
+}
