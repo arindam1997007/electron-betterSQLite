@@ -24,7 +24,9 @@
 		"rebuild-app": "electron-builder install-app-deps",
 		"electron": "wait-on tcp:3000 && electron .",
 		"start-electron-app": "concurrently -k \"cross-env BROWSER=none npm run start\" \"cross-env NODE_ENV=development  npm run electron\"",
-		"package-windows": "rm -rf build && rm -rf dist && npm run build && electron-builder -w -c.extraMetadata.main=build/electron.js"
+		"package-windows": "rm -rf build && rm -rf dist && npm run build && electron-builder -w -c.extraMetadata.main=build/electron.js",
+		"package-mac": "rm -rf build && rm -rf dist && npm run build && electron-builder build  -m -c.extraMetadata.main=build/electron.js ",
+		"package-linux": "rm -rf build && rm -rf dist && npm run build && electron-builder -l -c.extraMetadata.main=build/electron.js"
 	},
 	"eslintConfig": {
 		"extends": [
