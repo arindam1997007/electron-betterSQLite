@@ -10,8 +10,8 @@ export const InputPerson = ({ fetchData }) => {
 		window.sqlite.personDB?.insertPerson(name, parseInt(age))
 		setTimeout(() => {
 			// TODO: handle it asynchronously
-			fetchData(), 200
-		})
+			fetchData()
+		}, 200)
 		e.target.reset()
 	}
 
