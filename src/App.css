@@ -4,11 +4,19 @@
 	height: 100vh;
 }
 
+.background span {
+	position: fixed;
+	bottom: 2%;
+}
+
 .App {
 	text-align: center;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
-	height: 94vh;
+	height: 100%;
+	gap: 3em;
+	overflow-y: auto;
 }
