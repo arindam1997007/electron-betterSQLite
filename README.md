@@ -14,7 +14,7 @@ Higher versions might cause issues, so please fix any potential problems accordi
 Clone the repository and navigate to the project directory:
 
 ```bash
-git clone https://github.com/your-username/your-electron-sqlite-project.git
+git clone https://github.com/your-username/electron-betterSQLite.git
 cd your-electron-sqlite-project
 ```
 
