@@ -5,6 +5,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This is a demo project for integrating SQLite with Electron.
 For UI, we are using React made with Create React App
 
+## Tutorial
+
+I have created a [blog which you can read as well](https://dev.to/arindam1997007/a-step-by-step-guide-to-integrating-better-sqlite3-with-electron-js-app-using-create-react-app-3k16), to get a better understanding of setting up better-sqlite3 with your Electron application.
+
 ## Requirements
 Make sure you have Node.js installed. This project was developed and tested with Node.js v16.16.0. 
 Higher versions might cause issues, so please fix any potential problems accordingly.
@@ -55,6 +59,7 @@ Packages it for Linux OS for installation.
 
 Note: The Mac and Linux options are marked as **Not Tested**.
 you may need to make adjustments or test them for your specific use case.
+
 
 
 Additional Notes
