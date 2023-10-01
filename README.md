@@ -25,7 +25,7 @@ cd electron-betterSQLite
 Install the dependencies:
 `npm install`
 
-## Settin Up Locally
+## Setting Up Locally
 
 In the project directory, you can run:
 
